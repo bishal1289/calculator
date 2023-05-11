@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator App</title>
+    <link rel="stylesheet" href="calc.css">
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <h1>Calculator</h1>
+      <input type="text" id="txt" disabled />
+      <br />
+      <div id="flx">
+        <div>
+          <input type="button" value="1" onclick="display('1')" />
+          <input type="button" value="2" onclick="display('2')" />
+          <input type="button" value="3" onclick="display('3')" />
+          <input type="button" value="+" onclick="display('+')" />
+        </div>
+
+        <div>
+          <input type="button" value="4" onclick="display('4')" />
+          <input type="button" value="5" onclick="display('5')" />
+          <input type="button" value="6" onclick="display('6')" />
+          <input type="button" value="-" onclick="display('-')" />
+        </div>
+
+        <div>
+          <input type="button" value="7" onclick="display('7')" />
+          <input type="button" value="8" onclick="display('8')" />
+          <input type="button" value="9" onclick="display('9')" />
+          <input type="button" value="*" onclick="display('*')" />
+        </div>
+
+        <div>
+          <input type="button" value="C" id="clear" />
+          <input type="button" value="0" onclick="display('0')" />
+          <input type="button" value="=" onclick="solve()" />
+          <input type="button" value="/" onclick="display('/')" />
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
